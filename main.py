@@ -49,7 +49,7 @@ def init():
     time.sleep(0.3)
  
     #mr
-    pwm.set_pwm(12,0,servo_min-20)
+    pwm.set_pwm(12,0,servo_min)
     time.sleep(0.3)
     pwm.set_pwm(13,0,servo_max-40)
     time.sleep(0.3)
@@ -248,7 +248,7 @@ def frwd():
     pwm.set_pwm(14,0,servo_min+55)
     time.sleep(0.3)
 
-    pwm.set_pwm(9,0,servo_max-90)
+    pwm.set_pwm(9,0,servo_max-130)
     time.sleep(0.3)
      
     pwm.set_pwm(15,0,servo_max-50)#-120)
@@ -259,11 +259,12 @@ def frwd():
     pwm.set_pwm(14,0,servo_min-20)
     time.sleep(0.3)
 
-    pwm.set_pwm(9,0,servo_max-90)
+    pwm.set_pwm(9,0,servo_max-130)
     time.sleep(0.3)
      
     pwm.set_pwm(15,0,servo_max-125)#-120)
     time.sleep(0.3)
+
 
     #brs1
     pwm.set_pwm(10,0,servo_min+75)
@@ -285,7 +286,8 @@ def frwd():
     
     pwm.set_pwm(11,0,servo_min1-25)
     time.sleep(0.3)
-    '''
+
+
     #ml
     pwm.set_pwm(2,0,servo_max)
     time.sleep(0.3)
@@ -297,10 +299,9 @@ def frwd():
     time.sleep(0.3)
     pwm.set_pwm(13,0,servo_max)
     time.sleep(0.3)
-    '''
-    '''
+
     #tls1
-    pwm.set_pwm(0,0,servo_max-75)
+    pwm.set_pwm(0,0,servo_max-35)
     time.sleep(0.3)
 
     pwm.set_pwm(6,0,servo_min)
@@ -310,7 +311,7 @@ def frwd():
     time.sleep(0.3)
     
     #tls2
-    pwm.set_pwm(0,0,servo_max)
+    pwm.set_pwm(0,0,servo_max+40)
     time.sleep(0.3)
 
     pwm.set_pwm(6,0,servo_min)
@@ -318,8 +319,7 @@ def frwd():
     
     pwm.set_pwm(1,0,servo_min+75)
     time.sleep(0.3)
-    '''
-
+ 
 pwm.set_pwm_freq(60)
 init()
 while True:
