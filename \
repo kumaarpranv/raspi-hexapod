@@ -33,7 +33,7 @@ def init():
     
 
     #br 
-    pwm.set_pwm(10,0,servo_min)
+    pwm.set_pwm(10,0,servo_min+20)
     time.sleep(0.3)
 
     pwm.set_pwm(8,0,servo_max-40)
@@ -58,7 +58,7 @@ def init():
     pwm.set_pwm(0,0,servo_max+40)
     time.sleep(0.3)
 
-    pwm.set_pwm(6,0,servo_min+20)
+    pwm.set_pwm(6,0,servo_min)
     time.sleep(0.3)
     
     pwm.set_pwm(1,0,servo_min+75)
@@ -68,7 +68,7 @@ def init():
     pwm.set_pwm(14,0,servo_min-20)
     time.sleep(0.3)
 
-    pwm.set_pwm(9,0,servo_max-130)
+    pwm.set_pwm(9,0,servo_max-90)
     time.sleep(0.3)
      
     pwm.set_pwm(15,0,servo_max-125)#-120)
