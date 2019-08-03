@@ -21,122 +21,182 @@ def set_servo_pulse(channel, pulse):
 
 def init():
     #bl
-    pwm.set_pwm(4,0,servo_max+40)
+    pwm.set_pwm(4,0,servo_max)
     time.sleep(0.3)
-    pwm.set_pwm(7,0,servo_min-10)
+    pwm.set_pwm(7,0,servo_min-40)
     time.sleep(0.3)
-    pwm.set_pwm(5,0,servo_min1-50)
+    pwm.set_pwm(5,0,servo_max-300)
     time.sleep(0.3)
     
     #br
-    pwm.set_pwm(10,0,servo_min-10)
+    pwm.set_pwm(10,0,servo_min+20)
     time.sleep(0.3)
-    pwm.set_pwm(8,0,servo_max+10)
+    pwm.set_pwm(8,0,servo_max+20)
     time.sleep(0.3)
-    pwm.set_pwm(11,0,servo_min1+50)
+    pwm.set_pwm(11,0,servo_min+100)
     time.sleep(0.3)
-    
+        
     ##mid
-    pwm.set_pwm(2,0,servo_max+20)
+    pwm.set_pwm(2,0,servo_max-40)
     time.sleep(0.3)
 
-    pwm.set_pwm(3,0,servo_min-10)
+    pwm.set_pwm(3,0,servo_min-40)
     time.sleep(0.3)
 
-    pwm.set_pwm(12,0,servo_min-50)
+    pwm.set_pwm(12,0,servo_min)
     time.sleep(0.3)
 
-    pwm.set_pwm(13,0,servo_max-50)
+    pwm.set_pwm(13,0,servo_max)
     time.sleep(0.3)
-    
+        
     #tl
     pwm.set_pwm(0,0,servo_max)
     time.sleep(0.3)
-    pwm.set_pwm(6,0,servo_min-10)
+    pwm.set_pwm(6,0,servo_min-40)
     time.sleep(0.3)
-    pwm.set_pwm(1,0,servo_mid-25)
+    pwm.set_pwm(1,0,servo_min+100)
     time.sleep(0.3)
     
     #tr
-    pwm.set_pwm(14,0,servo_min-20)
+    pwm.set_pwm(14,0,servo_min)
     time.sleep(0.3)
-    pwm.set_pwm(9,0,servo_max-60)
+    pwm.set_pwm(9,0,servo_max)
     time.sleep(0.3)
-    pwm.set_pwm(15,0,servo_mid)#-65
-    time.sleep(0.3)
-    print("init") 
-
-def frwd():
-    ##
-    #
-    pwm.set_pwm(2,0,servo_max-30)
-    time.sleep(0.3)
-    pwm.set_pwm(3,0,servo_min+40)
-    time.sleep(0.3)
-
-    #
-    pwm.set_pwm(14,0,servo_min+30)
-    time.sleep(0.3)
-    pwm.set_pwm(9,0,servo_max-60)
-    time.sleep(0.3)
-    #
-    pwm.set_pwm(10,0,servo_min+40)
-    time.sleep(0.3)
-    pwm.set_pwm(3,0,servo_min-10)
+    pwm.set_pwm(15,0,servo_max-150)
     time.sleep(0.3)
     
-    ##
-    #
-    pwm.set_pwm(2,0,servo_max+20)
-    time.sleep(0.3)
-    pwm.set_pwm(3,0,servo_min-10)
-    time.sleep(0.3)
-    
-    #
-    pwm.set_pwm(14,0,servo_min-20)
-    time.sleep(0.3)
-    pwm.set_pwm(9,0,servo_max-10)
-    time.sleep(0.3)
 
-    #
-    pwm.set_pwm(10,0,servo_min-10)
-    time.sleep(0.3)
-    pwm.set_pwm(3,0,servo_min+40)
-    time.sleep(0.3)
- 
 def left():
-    #
     #bls1
-    pwm.set_pwm(4,0,servo_max-75)
+    pwm.set_pwm(4,0,servo_max-55)
     time.sleep(0.3)
-    pwm.set_pwm(5,0,servo_min1)
+    #pwm.set_pwm(7,0,servo_min+25)
+    #time.sleep(0.3)
+    pwm.set_pwm(5,0,servo_max-375)
     time.sleep(0.3)
     
     #bls2
-    pwm.set_pwm(4,0,servo_max)
+    pwm.set_pwm(4,0,servo_max+20)
     time.sleep(0.3)
-    pwm.set_pwm(5,0,servo_min1+75)
-    time.sleep(0.3)
-    #pwm.set_pwm(4,0,servo_max)
+    #pwm.set_pwm(7,0,servo_min-20)
     #time.sleep(0.3)
-
-
-    #
+    pwm.set_pwm(5,0,servo_max-300)
+    time.sleep(0.3)
+    
     #tls1
     pwm.set_pwm(0,0,servo_max-75)
     time.sleep(0.3)
-    pwm.set_pwm(1,0,servo_mid-100)
+    #pwm.set_pwm(6,0,servo_min+25)
+    #time.sleep(0.3)
+    pwm.set_pwm(1,0,servo_min+25)
     time.sleep(0.3)
     
-       
     #tls2
     pwm.set_pwm(0,0,servo_max)
     time.sleep(0.3)
-    pwm.set_pwm(1,0,servo_mid-25)
-    time.sleep(0.3)
-    #pwm.set_pwm(0,0,servo_max)
+    #pwm.set_pwm(6,0,servo_min-20)
     #time.sleep(0.3)
+    pwm.set_pwm(1,0,servo_min+100)
+    time.sleep(0.3)
 
+def right():
+    #brs1
+    pwm.set_pwm(10,0,servo_min+95)
+    time.sleep(0.3)
+    #pwm.set_pwm(8,0,servo_max+20)
+    #time.sleep(0.3)
+    pwm.set_pwm(11,0,servo_min+175)
+    time.sleep(0.3)
+
+    #brs2
+    pwm.set_pwm(10,0,servo_min+20)
+    time.sleep(0.3)
+    #pwm.set_pwm(8,0,servo_max+20)
+    #time.sleep(0.3)
+    pwm.set_pwm(11,0,servo_min+100)
+    time.sleep(0.3)
+    
+    #trs1
+    pwm.set_pwm(14,0,servo_min+75)
+    time.sleep(0.3)
+    #pwm.set_pwm(9,0,servo_max)
+    #time.sleep(0.3)
+    pwm.set_pwm(15,0,servo_max-75)
+    time.sleep(0.3)
+    
+    #trs2
+    pwm.set_pwm(14,0,servo_min)
+    time.sleep(0.3)
+    #pwm.set_pwm(9,0,servo_max)
+    #time.sleep(0.3)
+    pwm.set_pwm(15,0,servo_max-150)
+    time.sleep(0.3)
+
+
+def frwd():
+    #bls1
+    pwm.set_pwm(4,0,servo_max-55)
+    time.sleep(0.3)
+    #pwm.set_pwm(7,0,servo_min+25)
+    #time.sleep(0.3)
+    pwm.set_pwm(5,0,servo_max-375)
+    time.sleep(0.3)
+    
+    #bls2
+    pwm.set_pwm(4,0,servo_max+20)
+    time.sleep(0.3)
+    #pwm.set_pwm(7,0,servo_min-20)
+    #time.sleep(0.3)
+    pwm.set_pwm(5,0,servo_max-300)
+    time.sleep(0.3)
+
+    #brs1
+    pwm.set_pwm(10,0,servo_min+95)
+    time.sleep(0.3)
+    #pwm.set_pwm(8,0,servo_max+20)
+    #time.sleep(0.3)
+    pwm.set_pwm(11,0,servo_min+175)
+    time.sleep(0.3)
+
+    #brs2
+    pwm.set_pwm(10,0,servo_min+20)
+    time.sleep(0.3)
+    #pwm.set_pwm(8,0,servo_max+20)
+    #time.sleep(0.3)
+    pwm.set_pwm(11,0,servo_min+100)
+    time.sleep(0.3)
+
+    #tls1
+    pwm.set_pwm(0,0,servo_max-75)
+    time.sleep(0.3)
+    #pwm.set_pwm(6,0,servo_min+25)
+    #time.sleep(0.3)
+    pwm.set_pwm(1,0,servo_min+25)
+    time.sleep(0.3)
+    
+    #tls2
+    pwm.set_pwm(0,0,servo_max)
+    time.sleep(0.3)
+    #pwm.set_pwm(6,0,servo_min-20)
+    #time.sleep(0.3)
+    pwm.set_pwm(1,0,servo_min+100)
+    time.sleep(0.3)
+
+    #trs1
+    pwm.set_pwm(14,0,servo_min+75)
+    time.sleep(0.3)
+    #pwm.set_pwm(9,0,servo_max)
+    #time.sleep(0.3)
+    pwm.set_pwm(15,0,servo_max-75)
+    time.sleep(0.3)
+    
+    #trs2
+    pwm.set_pwm(14,0,servo_min)
+    time.sleep(0.3)
+    #pwm.set_pwm(9,0,servo_max)
+    #time.sleep(0.3)
+    pwm.set_pwm(15,0,servo_max-150)
+    time.sleep(0.3)
 
 
 pwm.set_pwm_freq(60)
@@ -145,7 +205,7 @@ while True:
     #pwm.set_pwm(9,0,servo_max)
     #time.sleep(0.3)
     #pwm.set_pwm(9,0,servo_max1)
-    #time.sleep(0.3)
-    frwd()
+    #frwd()
+    #right()
     #left()
     pass
