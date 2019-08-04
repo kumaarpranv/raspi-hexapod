@@ -135,7 +135,7 @@ def right():
 
 def frwd():
     #bls1
-    pwm.set_pwm(4,0,servo_max-55)
+    pwm.set_pwm(4,0,servo_max-75)
     time.sleep(0.3)
     #pwm.set_pwm(7,0,servo_min+25)
     #time.sleep(0.3)
@@ -143,7 +143,7 @@ def frwd():
     time.sleep(0.3)
     
     #bls2
-    pwm.set_pwm(4,0,servo_max+20)
+    pwm.set_pwm(4,0,servo_max)
     time.sleep(0.3)
     #pwm.set_pwm(7,0,servo_min-20)
     #time.sleep(0.3)
