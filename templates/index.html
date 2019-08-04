@@ -10,7 +10,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-
+	<script>
+		function postMov(m)
+		{
+			console.log(m);
+			$.ajax({
+				
+				url: '/api/get?mov='+m,
+				//contentType: 'application/json;charset=UTF-8',
+				//data: {'data':m}
+				success: function(data){
+				console.log("success");
+				}
+			});
+		}
+	</script>
 	</head>	
 	<body>
 		<center>
@@ -18,9 +32,9 @@
 			<br />
 			<img height="300px" width="300px" />
 			<br /><br />
-			<button class="btn btn-primary">left</button>
-			<button class="btn btn-primary">frwrd</button>
-			<button class="btn btn-primary">right</button>
+			<button class="btn btn-primary" id="left" onclick="postMov('l');">left</button>
+			<button class="btn btn-primary" id="frwd" onclick="postMov('f');" >frwrd</button>
+			<button class="btn btn-primary" id="right" onclick="postMov('r');">right</button>
 		</div>
 		</center>
 	</body>
