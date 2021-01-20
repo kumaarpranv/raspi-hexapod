@@ -201,6 +201,7 @@ def frwd():
 
 pwm.set_pwm_freq(60)
 init()
+"""
 while True:
     pwm.set_pwm(9,0,servo_max)
     time.sleep(0.3)
@@ -209,3 +210,4 @@ while True:
     #right()
     #left()
     pass
+"""
